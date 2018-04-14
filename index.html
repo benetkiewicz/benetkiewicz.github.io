@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Piotr Benetkiewicz - .NET developer homepage</title>
-        <link href="Content/bootstrap.min.css" rel="stylesheet" />
         <link href="Content/style.css" rel="stylesheet" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width">
@@ -16,12 +15,8 @@
 
             ga('create', 'UA-55732808-2', 'auto');
             ga('send', 'pageview');
-
-            var trackOutboundLink = function (url) {
-                ga('send', 'event', 'outbound', 'click', url, {
-                    'transport': 'beacon',
-                    'hitCallback': function () { document.location = url; }
-                });
+            function navigate(url) {
+                window.location = url;
             }
         </script>
     </head>
@@ -29,51 +24,48 @@
         <div id="fancyTop"></div>
 
         <div class="container">
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-lg-4">
+            <section class="header">
+                <div class="minw300">
                     <h2>Piotr Benetkiewicz homepage</h2>
                 </div>
-                <div class="col-lg-7">
+                <div class="maxw500">
                     <p>My name is Piotr Benetkiewicz and I am software developer, mostly working with .NET technologies for web.</p>
                     <p>Whatever brings you here, business or pleasure, please use whatever service mentioned here to contact me or learn about me.</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-lg-4 clickable" onclick="trackOutboundLink('http://devproductivity.wordpress.com'); return false;">
-                    <img src="images/icon-blog.png" alt="Blog image" style="width: 128px; height: 128px;">
+            <section class="tiles">
+                <div class="tile" onclick="navigate('http://devproductivity.wordpress.com'); return false;">
+                    <img src="images/icon-blog.png" alt="Blog image"  >
                     <h2>DevProductivity</h2>
                     <p>DevProductivity blog is where I share my tips on how to organize your workstation and software, so it will actually help you focus on your programming tasks.</p>
                 </div>
-                <div class="col-lg-4 clickable" onclick="trackOutboundLink('https://github.com/benetkiewicz'); return false;">
-                    <img src="images/icon-github.png" alt="Github image" style="width: 128px; height: 128px;">
+                <div class="tile" onclick="navigate('https://github.com/benetkiewicz'); return false;">
+                    <img src="images/icon-github.png" alt="Github image">
                     <h2>GitHub</h2>
                     <p>My pet projects code repo. Small tools, custom libraries and some demo projects. Everything c#/.net related. </p>
                 </div>
-                <div class="col-lg-4 clickable" onclick="trackOutboundLink('http://pl.linkedin.com/in/piotrbenetkiewicz/'); return false;">
-                    <img src="images/icon-linkedin.png" alt="Linkedin image" style="width: 128px; height: 128px;">
+                <div class="tile" onclick="navigate('http://pl.linkedin.com/in/piotrbenetkiewicz/'); return false;">
+                    <img src="images/icon-linkedin.png" alt="Linkedin image">
                     <h2>LinkedIn</h2>
                     <p>My carrier path digitized. See my education, employees, what I learned and what I teach.</p>
                 </div>
-            </div>
-
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-lg-4 clickable" onclick="window.location='mailto:pbenetkiewicz@gmail.com'">
-                    <img src="images/icon-email.png" alt="Email image" style="width: 128px; height: 128px;">
+                <div class="tile" onclick="window.location='mailto:pbenetkiewicz@gmail.com'">
+                    <img src="images/icon-email.png" alt="Email image">
                     <h2>Email</h2>
                     <p>Good old email if you have something to say.</p>
                 </div>
-                <div class="col-lg-4 clickable" onclick="trackOutboundLink('http://benetkiewicz.github.io/blog/'); return false;">
-                    <img src="images/icon-blog.png" alt="Blog image" style="width: 128px; height: 128px;">
+                <div class="tile" onclick="navigate('http://benetkiewicz.github.io/blog/'); return false;">
+                    <img src="images/icon-blog.png" alt="Blog image">
                     <h2>Diary of a programmer</h2>
                     <p>Blog about software development, mostly focused on .NET.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="footer">
-            <div class="container">
-                <p class="text-muted">All rights reserved. &copy; Piotr Benetkiewicz</p>
+            <div>
+                <p>All rights reserved. &copy; Piotr Benetkiewicz</p>
             </div>
         </div>
     </body>

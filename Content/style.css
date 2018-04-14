@@ -1,31 +1,47 @@
 ﻿html {
-    position: relative;
     min-height: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
+.minw300 {
+    min-width: 300px;
+}
+.maxw500{
+    max-width: 500px;
+}
 .footer {
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
+    display: flex;
     background-color: #EEE;
-    text-align: right;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    width: auto;
+    margin: 0 auto;
     max-width: 1024px;
-    padding: 0 15px;
 }
 
-.container .text-muted {
-    margin: 20px 0;
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tile {
+    width: 300px;
+    cursor: pointer;
 }
 
 #fancyTop {
@@ -35,8 +51,4 @@ body {
     top: 0;
     background-color: red;
     min-height: 5px;
-}
-
-.clickable {
-    cursor: pointer;
 }
