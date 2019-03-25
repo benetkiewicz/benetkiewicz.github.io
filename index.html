@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
         <title>Piotr Benetkiewicz - .NET developer homepage</title>
         <link href="Content/style.css" rel="stylesheet" />
@@ -15,9 +15,6 @@
 
             ga('create', 'UA-55732808-2', 'auto');
             ga('send', 'pageview');
-            function navigate(url) {
-                window.location = url;
-            }
         </script>
     </head>
     <body>
@@ -35,33 +32,34 @@
             </section>
 
             <section class="tiles">
-                <div class="tile" onclick="navigate('http://devproductivity.wordpress.com'); return false;">
+                <a class="tile" href="http://devproductivity.wordpress.com">
                     <img src="images/icon-blog.png" alt="Blog image"  >
                     <h2>DevProductivity</h2>
                     <p>DevProductivity blog is where I share my tips on how to organize your workstation and software, so it will actually help you focus on your programming tasks.</p>
-                </div>
-                <div class="tile" onclick="navigate('https://github.com/benetkiewicz'); return false;">
+                </a>
+                <a class="tile" href="https://github.com/benetkiewicz">
                     <img src="images/icon-github.png" alt="Github image">
                     <h2>GitHub</h2>
                     <p>My pet projects code repo. Small tools, custom libraries and some demo projects. Everything c#/.net related. </p>
-                </div>
-                <div class="tile" onclick="navigate('http://pl.linkedin.com/in/piotrbenetkiewicz/'); return false;">
+                </a>
+                <a class="tile" href="http://pl.linkedin.com/in/piotrbenetkiewicz/">
                     <img src="images/icon-linkedin.png" alt="Linkedin image">
                     <h2>LinkedIn</h2>
                     <p>My carrier path digitized. See my education, employees, what I learned and what I teach.</p>
-                </div>
-                <div class="tile" onclick="window.location='mailto:pbenetkiewicz@gmail.com'">
+                </a>
+                <a class="tile" href="mailto:pbenetkiewicz@gmail.com">
                     <img src="images/icon-email.png" alt="Email image">
                     <h2>Email</h2>
                     <p>Good old email if you have something to say.</p>
-                </div>
-                <div class="tile" onclick="navigate('http://benetkiewicz.github.io/blog/'); return false;">
+                </a>
+                <a class="tile" href="http://benetkiewicz.github.io/blog/">
                     <img src="images/icon-blog.png" alt="Blog image">
                     <h2>Diary of a programmer</h2>
                     <p>Blog about software development, mostly focused on .NET.</p>
-                </div>
-            </div>
-        </section>
+                </a>
+            </section>
+        </div>
+        
 
         <div class="footer">
             <div>

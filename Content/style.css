@@ -3,11 +3,17 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
+    padding: 12px;
 }
 
 .minw300 {
@@ -17,13 +23,9 @@
     max-width: 500px;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     height: 60px;
     display: flex;
-    background-color: #EEE;
     align-items: center;
     justify-content: center;
 }
@@ -39,9 +41,13 @@
     justify-content: space-between;
 }
 
+a.tile {
+    text-decoration: none;
+    color: #000;
+}
 .tile {
     width: 300px;
-    cursor: pointer;
+    padding: 12px;
 }
 
 #fancyTop {
